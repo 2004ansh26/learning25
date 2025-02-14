@@ -16,6 +16,9 @@ import { Pricing } from './component/Pricing'
 import { Error404 } from './component/Error404'
 import { Play } from './component/Play'
 import { Form } from './assets/forms/Form'
+import { DummyForm } from './assets/forms/DummyForm'
+import { FormValidator } from './assets/forms/FormValidator'
+import {ValidateForm} from './assets/forms/ValidationForm';
 function App() {
   // Js ralated code will be here
 // var   male=true;
@@ -34,6 +37,9 @@ function App() {
           {/* Forms Routes */}
           
           <Route path='/form' element={<Form/>}></Route>
+          <Route path='/hform' element={<DummyForm/>}></Route>
+          <Route path="/register" element={<FormValidator/>}></Route>
+          <Route path="/validate" element={<ValidateForm/>}></Route>
           <Route path="/*" element={<Error404/>}></Route>  
 
       </Routes>

@@ -23,6 +23,15 @@ export const Navbar = () => {
       <li class="nav-item">
       <Link class="nav-link" to="/form">Form<span class="sr-only">(current)</span></Link>
       </li>
+      <li class="nav-item">
+      <Link class="nav-link" to="/hform">Dummy form<span class="sr-only">(current)</span></Link>
+      </li>
+      <li class="nav-item">
+      <Link class="nav-link" to="/register">Register<span class="sr-only">(current)</span></Link>
+      </li>
+      <li class="nav-item">
+      <Link class="nav-link" to="/validate">Validate Form<span class="sr-only">(current)</span></Link>
+      </li>
      
 
     </ul>
