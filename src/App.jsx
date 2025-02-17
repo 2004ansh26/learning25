@@ -19,6 +19,7 @@ import { Form } from './assets/forms/Form'
 import { DummyForm } from './assets/forms/DummyForm'
 import { FormValidator } from './assets/forms/FormValidator'
 import {ValidateForm} from './assets/forms/ValidationForm';
+import { Api } from './component/apis/Api'
 function App() {
   // Js ralated code will be here
 // var   male=true;
@@ -42,6 +43,9 @@ function App() {
           <Route path="/validate" element={<ValidateForm/>}></Route>
           <Route path="/*" element={<Error404/>}></Route>  
 
+
+          {/* API fetching */}
+          <Route path='/apifetch' element={<Api/>}></Route>
       </Routes>
 
 
