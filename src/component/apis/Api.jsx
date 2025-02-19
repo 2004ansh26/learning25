@@ -23,9 +23,9 @@ export const Api = () => {
         <button onClick={()=>{getUserData()}}>get</button>
         <br />
         {message}
-        <table class="table table-black"border={2}>
-                    <tr>
-                        {/* <th>id</th> */}
+        <table class="table" border={2}>
+                    <tr class="table-dark">
+                        <th>id</th>
                         <th>name</th>
                         <th>age</th>
                         <th>email</th>
@@ -34,7 +34,7 @@ export const Api = () => {
         {
             users?.map((user)=>{
                 return <tr>
-                        {/* <td>{user.id}</td> */}
+                        <td>{user._id}</td>
                         <td>{user.name}</td>
                         <td>{user.age}</td>
                         <td>{user.email}</td>

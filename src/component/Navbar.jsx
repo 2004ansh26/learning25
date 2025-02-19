@@ -35,6 +35,8 @@ export const Navbar = () => {
       <li class="nav-item">
       <Link class="nav-link" to="/apifetch">Api<span class="sr-only">(current)</span></Link>
       </li>
+      
+    
      
 
     </ul>
