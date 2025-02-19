@@ -20,6 +20,7 @@ import { DummyForm } from './assets/forms/DummyForm'
 import { FormValidator } from './assets/forms/FormValidator'
 import {ValidateForm} from './assets/forms/ValidationForm';
 import { Api } from './component/apis/Api'
+import { ApiPost } from './component/apis/ApiPost'
 // import { SearchMovie } from './component/omdb/SearchMovie'
 function App() {
   // Js ralated code will be here
@@ -47,9 +48,13 @@ function App() {
 
           {/* API fetching */}
           <Route path='/apifetch' element={<Api/>}></Route>
+          <Route path='/apifetch/:name' element={<Api/>}></Route>
 
           {/* OMDB api for movies */}
           {/* <Route path='/searchmovie' element={<SearchMovie/>}></Route> */}
+
+          {/* POST fetch from form */}
+          <Route path='/postapi' element={<ApiPost/>}></Route>
       </Routes>
 
 

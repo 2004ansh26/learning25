@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export const Api = () => {
     const [message,setmessage]=useState("")
@@ -14,18 +14,21 @@ export const Api = () => {
 
 
     }
+    useEffect(()=>{
+        getUserData()
+    },[])
 
   return (
 
     <div>
         <h2 style={{textAlign:"center"}}>API Fetching</h2> 
 
-        <button onClick={()=>{getUserData()}}>get</button>
+        {/* <button onClick={()=>{getUserData()}}>get</button> */}
         <br />
         {message}
-        <table class="table" border={2}>
-                    <tr class="table-dark">
-                        <th>id</th>
+        <table class="table table-black"border={2}>
+                    <tr>
+                        {/* <th>id</th> */}
                         <th>name</th>
                         <th>age</th>
                         <th>email</th>
@@ -34,7 +37,7 @@ export const Api = () => {
         {
             users?.map((user)=>{
                 return <tr>
-                        <td>{user._id}</td>
+                        {/* <td>{user.id}</td> */}
                         <td>{user.name}</td>
                         <td>{user.age}</td>
                         <td>{user.email}</td>
